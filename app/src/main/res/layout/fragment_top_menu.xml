@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOlive"
+    android:orientation="horizontal"
+    tools:context="test.ki.mypractice.TopMenuFragment">
+
+    <Button
+        android:id="@+id/top_btn_1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
+        android:text="@string/top_btn_1"/>
+
+    <Button
+        android:id="@+id/top_btn_2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/top_btn_2"/>
+
+    <Button
+        android:id="@+id/top_btn_3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/top_btn_3"/>
+
+</LinearLayout>

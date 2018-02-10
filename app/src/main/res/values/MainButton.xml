@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="to_feature_1" >Fragment Practice</string>
+    <string name="top_btn_1" >Change To 1</string>
+    <string name="top_btn_2" >Change To 2</string>
+    <string name="top_btn_3" >Change To 3</string>
+</resources>

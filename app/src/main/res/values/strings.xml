@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MyPractice</string>
+    <string name="top_menu_fragment">This is Top Menu Area.</string>
+    <string name="left_content_fragment">This is Left Content Area.</string>
+    <string name="right_content_fragment">This is Right Content Area.</string>
+    <string name="bottom_content_fragment">This is Bottom Content Area.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
