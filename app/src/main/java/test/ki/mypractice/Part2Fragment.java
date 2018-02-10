@@ -49,9 +49,9 @@ public class Part2Fragment extends Fragment {
         view.findViewById(R.id.part2_layout)
                 .setBackgroundColor(Color.parseColor(mParam1));
 
-//        Typeface paramFont = Typeface.createFromAsset(getActivity().getAssets(), mParam2);
-//        TextView tv1 = view.findViewById(R.id.part2_textview);
-//        tv1.setTypeface(paramFont);
+        TextView tv1 = view.findViewById(R.id.part2_textview);
+        tv1.setText(R.string.app_name);
+        tv1.setTextSize(Float.parseFloat(mParam2));
 
         return view;
     }

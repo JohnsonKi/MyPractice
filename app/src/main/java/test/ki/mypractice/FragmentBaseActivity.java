@@ -37,7 +37,7 @@ public class FragmentBaseActivity extends AppCompatActivity implements TopMenuFr
     public void onBtn2Click() {
         Log.e("### DEBUG TAG ###", this.getClass().toString() + "Top Menu Fragment onBtn2Click.");
 
-        Part2Fragment p2 = Part2Fragment.newInstance("#FF9872","fonts/Roboto-Regular.ttf");
+        Part2Fragment p2 = Part2Fragment.newInstance("#FF9872","30");
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.left_content_fragment, p2, "left_part2")
                 .commit();
