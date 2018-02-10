@@ -1,6 +1,5 @@
 package test.ki.mypractice;
 
-import android.net.Uri;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -46,5 +45,11 @@ public class FragmentBaseActivity extends AppCompatActivity implements TopMenuFr
     @Override
     public void onBtn3Click() {
         Log.e("### DEBUG TAG ###", this.getClass().toString() + "Top Menu Fragment onBtn3Click.");
+
+        Part3Fragment p3 = Part3Fragment.newInstance("#FFFF00", "20", 0);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.right_content_fragment, p3, "right_content_fragment")
+                .commit();
+
     }
 }

@@ -7,4 +7,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="part1_fragment">part3 fragment</string>
+    <string name="part2_fragment">part3 fragment</string>
+    <string name="part3_fragment">part3 fragment</string>
 </resources>

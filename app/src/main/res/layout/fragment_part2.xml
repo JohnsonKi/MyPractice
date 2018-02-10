@@ -10,6 +10,6 @@
         android:id="@+id/part2_textview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="@string/part2_fragment" />
 
 </FrameLayout>
