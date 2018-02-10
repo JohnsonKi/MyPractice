@@ -37,13 +37,6 @@ public class Part2Fragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
-            getActivity().findViewById(R.id.part2_layout)
-                    .setBackgroundColor(Color.parseColor(mParam1));
-
-            Typeface paramFont = Typeface.createFromAsset(getActivity().getAssets(), mParam2);
-            TextView tv1 = getActivity().findViewById(R.id.part2_textview);
-            tv1.setTypeface(paramFont);
         }
     }
 
@@ -51,7 +44,16 @@ public class Part2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_part2, container, false);
+        View view = inflater.inflate(R.layout.fragment_part2, container, false);
+
+        view.findViewById(R.id.part2_layout)
+                .setBackgroundColor(Color.parseColor(mParam1));
+
+//        Typeface paramFont = Typeface.createFromAsset(getActivity().getAssets(), mParam2);
+//        TextView tv1 = view.findViewById(R.id.part2_textview);
+//        tv1.setTypeface(paramFont);
+
+        return view;
     }
 
     @Override
