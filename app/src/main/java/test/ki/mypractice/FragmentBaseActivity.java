@@ -52,4 +52,15 @@ public class FragmentBaseActivity extends AppCompatActivity implements TopMenuFr
                 .commit();
 
     }
+
+    @Override
+    public void onBtn4Click() {
+        Log.e("### DEBUG TAG ###", this.getClass().toString() + "Top Menu Fragment onBtn4Click.");
+
+        Part4Fragment p4 = new Part4Fragment();
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.right_content_fragment, p4, "right_part4")
+                .commit();
+    }
 }

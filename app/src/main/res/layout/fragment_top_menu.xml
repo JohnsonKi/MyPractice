@@ -28,4 +28,11 @@
         android:layout_height="wrap_content"
         android:text="@string/top_btn_3"/>
 
+    <Button
+        android:id="@+id/top_btn_4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/top_btn_4"/>
+
 </LinearLayout>

@@ -3,9 +3,11 @@
     <string name="to_feature_1" >Fragment Practice</string>
     <string name="to_feature_2" >ListView Practice</string>
     <string name="to_feature_3" >Custom ListView Practice</string>
+    <string name="to_feature_4" >Fragment Custom ListView</string>
     <string name="top_btn_1" >Change To 1</string>
     <string name="top_btn_2" >Change To 2</string>
     <string name="top_btn_3" >Change To 3</string>
+    <string name="top_btn_4" >Change To 4</string>
     <string name="custome_listview_add_item" >Add Item</string>
     <string name="custome_listview_delete_item" >Delete Item</string>
 </resources>

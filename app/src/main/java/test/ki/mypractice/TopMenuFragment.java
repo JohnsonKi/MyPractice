@@ -39,6 +39,9 @@ public class TopMenuFragment extends Fragment implements View.OnClickListener {
         Button btn3 = view.findViewById(R.id.top_btn_3);
         btn3.setOnClickListener(this);
 
+        Button btn4 = view.findViewById(R.id.top_btn_4);
+        btn4.setOnClickListener(this);
+
         return view;
     }
 
@@ -82,6 +85,8 @@ public class TopMenuFragment extends Fragment implements View.OnClickListener {
             case R.id.top_btn_3:
                 mListener.onBtn3Click();
                 break;
+            case R.id.top_btn_4:
+                mListener.onBtn4Click();
             default:
                 break;
         }
@@ -102,5 +107,6 @@ public class TopMenuFragment extends Fragment implements View.OnClickListener {
         void onBtn1Click();
         void onBtn2Click();
         void onBtn3Click();
+        void onBtn4Click();
     }
 }
