@@ -53,7 +53,7 @@ public class CustomAdapter extends BaseAdapter {
         TextView tv2 = convertView.findViewById(R.id.custom_list_row_col2);
         tv2.setText(foodList.get(position).getName());
 
-        TextView tv3 = convertView.findViewById(R.id.custom_list_row_col2);
+        TextView tv3 = convertView.findViewById(R.id.custom_list_row_col3);
         tv3.setText(foodList.get(position).getPrice());
 
         return convertView;

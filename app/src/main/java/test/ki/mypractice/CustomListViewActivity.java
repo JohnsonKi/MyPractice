@@ -33,6 +33,10 @@ public class CustomListViewActivity extends AppCompatActivity {
 
         CustomAdapter customAdapter = new CustomAdapter(this);
         customAdapter.setFoodList(foods);
+        customAdapter.notifyDataSetChanged();
+
         listview1.setAdapter(customAdapter);
+
+        customAdapter.notifyDataSetChanged();
     }
 }
