@@ -27,5 +27,29 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        findViewById(R.id.to_feature_2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("### DEBUG TAG ###", this.getClass().toString() + " onClick. ");
+
+                Context ct = v.getContext();
+
+                Intent it = new Intent(ct, ListViewActivity.class);
+                ct.startActivity(it);
+            }
+        });
+
+        findViewById(R.id.to_feature_3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("### DEBUG TAG ###", this.getClass().toString() + " onClick. ");
+
+                Context ct = v.getContext();
+
+                Intent it = new Intent(ct, CustomListViewActivity.class);
+                ct.startActivity(it);
+            }
+        });
     }
 }
