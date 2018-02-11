@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CustomListViewActivity extends AppCompatActivity {
 
@@ -31,10 +33,7 @@ public class CustomListViewActivity extends AppCompatActivity {
         cf2.setPrice(129);
         foods.add(cf2);
 
-        CustomAdapter customAdapter = new CustomAdapter(this);
-        customAdapter.setFoodList(foods);
-        customAdapter.notifyDataSetChanged();
-
+        CustomAdapter customAdapter = new CustomAdapter(CustomListViewActivity.this, foods);
         listview1.setAdapter(customAdapter);
 
         customAdapter.notifyDataSetChanged();

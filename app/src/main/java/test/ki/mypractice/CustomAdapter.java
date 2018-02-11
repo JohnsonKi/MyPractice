@@ -1,61 +1,55 @@
 package test.ki.mypractice;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class CustomAdapter extends BaseAdapter {
 
-    Context context;
     LayoutInflater layoutInflater = null;
-    ArrayList<CustomFoodList> foodList;
+    List<CustomFoodList> foodList;
 
-    public CustomAdapter (Context cont) {
-        context = cont;
-
-        // 以下2種類のinflater作成方法同じです
-//        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        layoutInflater = LayoutInflater.from(context);
-    }
-
-    public void setFoodList(ArrayList<CustomFoodList> foodList) {
-        this.foodList = foodList;
+    public CustomAdapter (Context context, List<CustomFoodList> data) {
+        foodList = data;
+        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return foodList.size();
     }
 
     @Override
-    public Object getItem(int position) {
-        return null;
+    public String getItem(int position) {
+        return foodList.get(position).getName();
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        convertView = layoutInflater.inflate(R.layout.custom_list_one_row_item, parent, false);
+        View view = layoutInflater.inflate(R.layout.custom_list_one_row_item, null);
+        Log.e("### DEBUG TAG ###", this.getClass().toString() + "getView.");
 
-        TextView tv1 = convertView.findViewById(R.id.custom_list_row_col1);
-        tv1.setText(String.valueOf(foodList.get(position).getId()));
+        TextView conView1 = view.findViewById(R.id.custom_list_row_col1);
+        conView1.setText(String.valueOf(foodList.get(position).getId()));
 
-        TextView tv2 = convertView.findViewById(R.id.custom_list_row_col2);
-        tv2.setText(foodList.get(position).getName());
+        TextView conView2 = view.findViewById(R.id.custom_list_row_col2);
+        conView2.setText(foodList.get(position).getName());
 
-        TextView tv3 = convertView.findViewById(R.id.custom_list_row_col3);
-        tv3.setText(foodList.get(position).getPrice());
+        TextView conView3 = view.findViewById(R.id.custom_list_row_col3);
+        conView3.setText(String.valueOf(foodList.get(position).getPrice()));
 
-        return convertView;
+        return view;
     }
 }
