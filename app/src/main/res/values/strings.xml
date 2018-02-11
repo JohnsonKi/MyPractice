@@ -10,4 +10,6 @@
     <string name="part1_fragment">part3 fragment</string>
     <string name="part2_fragment">part3 fragment</string>
     <string name="part3_fragment">part3 fragment</string>
+
+    <string name="custom_listview_shownow">Now Selected.</string>
 </resources>

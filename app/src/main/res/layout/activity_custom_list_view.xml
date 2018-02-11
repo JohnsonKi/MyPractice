@@ -7,6 +7,34 @@
     android:orientation="vertical"
     tools:context="test.ki.mypractice.CustomListViewActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/custome_listview_add_item"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/item_show"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_listview_shownow"
+            />
+
+        <Button
+            android:id="@+id/delete_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/custome_listview_delete_item"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
     <ListView
         android:id="@+id/custom_list_1"
         android:layout_width="match_parent"
