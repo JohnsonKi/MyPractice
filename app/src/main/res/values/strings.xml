@@ -13,4 +13,11 @@
     <string name="part4_fragment">part4 fragment</string>
 
     <string name="custom_listview_shownow">Now Selected.</string>
+
+    <string name="actionbar_title1">Title1</string>
+    <string name="actionbar_title2">Title2</string>
+    <string name="actionbar_title3">Title3</string>
+    <string name="actionbar_title4">Title4</string>
+    <string name="actionbar_title5">Title5</string>
+    <string name="actionbar_search">Bar Search</string>
 </resources>

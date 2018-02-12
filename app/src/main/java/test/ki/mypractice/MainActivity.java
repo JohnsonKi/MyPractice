@@ -51,5 +51,17 @@ public class MainActivity extends AppCompatActivity {
                 ct.startActivity(it);
             }
         });
+
+        findViewById(R.id.to_feature_4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("### DEBUG TAG ###", this.getClass().toString() + " onClick. ");
+
+                Context ct = v.getContext();
+
+                Intent it = new Intent(ct, ActionBarActivity.class);
+                ct.startActivity(it);
+            }
+        });
     }
 }
